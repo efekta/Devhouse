@@ -17,14 +17,11 @@
 
   &__centered {
     margin: 45px 0;
+
     @media(min-width: 1024px) {
       margin: 87px auto;
-      width: 1024px;
+      width: 774px;
     }
-  }
-
-  &__picture {
-    text-align: left;
   }
 
   &__caption {
