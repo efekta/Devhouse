@@ -92,7 +92,10 @@
     text-align: right;
 
     img {
-      min-width: 363px;
+
+      @media(min-width: 768px) {
+        min-width: 363px;
+      }
     }
   }
 
@@ -127,7 +130,10 @@
     }
 
     img {
-      min-width: 363px;
+
+      @media(min-width: 768px) {
+        min-width: 363px;
+      }
     }
   }
 
