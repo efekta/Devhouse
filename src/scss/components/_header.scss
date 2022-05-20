@@ -1,0 +1,28 @@
+.header {
+  background: var(--light-color);
+  height: 82px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &-logo {
+    height: 36px;
+    max-width: 134px;
+    margin-right: 10px;
+  }
+
+  &-btn {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

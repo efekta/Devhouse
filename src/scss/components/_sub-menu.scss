@@ -1,0 +1,24 @@
+.sub-menu {
+  background: white;
+  box-shadow: 0px 2px 8px 0px rgba(138, 166, 187, 0.2);
+  display: none;
+  margin-top: 15px;
+  position: absolute;
+  width: 200px;
+
+  &__item {
+    padding: 10px;
+
+    &:nth-child(2n - 1) {
+      background: rgba(0, 216, 251, 0.09);
+    }
+  }
+
+  &__item:hover {
+    background: rgba(0, 216, 251, 0.9);
+  }
+
+  &.show {
+    display: block;
+  }
+}

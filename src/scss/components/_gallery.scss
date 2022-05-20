@@ -1,0 +1,27 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  justify-content: center;
+
+  @media(min-width: 485px) {
+    grid-template-columns: repeat(2, 180px);
+  }
+
+  @media(min-width: 1024px) {
+    grid-template-columns: repeat(4, 180px);
+  }
+
+  &__item {
+    align-items: center;
+    background: var(--light-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  &__img {
+    height: 100px;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,28 @@
+.header-nav {
+  position: relative;
+
+  &__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--black);
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media(min-width: 1025px) {
+    flex-direction: row;
+  }
+
+  &__item {
+    margin: 22px;
+    position: relative;
+
+    @media(min-width: 1025px) {
+      margin: 0 22px;
+    }
+  }
+}

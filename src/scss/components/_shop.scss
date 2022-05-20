@@ -1,0 +1,125 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  margin: 87px auto;
+
+  @media(min-width: 1024px) {
+    width: 1024px;
+  }
+
+  &__title {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 28px;
+
+    @media(min-width: 768px) {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  &-feature {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 48px;
+
+    @media(min-width: 1024px) {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  }
+
+  &-feature__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    @media(min-width: 1024px) {
+      margin-top: 0;
+      width: 48%;
+    }
+  }
+
+  &-feature__img {
+    margin-top: 30px;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+
+    @media(min-width: 1024px) {
+      margin-top: 0;
+      padding: 50px 50px 50px 0;
+      width: 48%;
+    }
+  }
+
+  &-feature__img::after {
+    background: var(--light-pink);
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    z-index: -1;
+
+    @media(min-width: 1024px) {
+      right: 0;
+      width: 60%;
+    }
+  }
+
+  &-feature__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+    @media(min-width: 768px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  &-feature__desc {
+    color: #6D7278;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.shop-feature:nth-child(2n) {
+  @media(min-width: 1024px) {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .shop-feature__img::after {
+    left: 0;
+  }
+
+  .shop-feature__img {
+    padding: 50px;
+
+    @media(min-width: 1024px) {
+      padding: 50px 0 50px 50px;
+    }
+  }
+}

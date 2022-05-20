@@ -1,0 +1,38 @@
+.btn {
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 25px;
+
+  &--pink {
+    border-color: var(--pink);
+    color: var(--pink);
+
+    &:hover {
+      background:var(--pink);
+      color: var(--light-color);
+    }
+  }
+
+  &--bg-pink {
+    background: var(--pink);
+    color: var(--light-color);
+
+    &:hover {
+      background: transparent;
+      border-color: var(--pink);
+      color: var(--pink);
+    }
+  }
+
+  &--brown {
+    background: var(--brown);
+    color: var(--light-color);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

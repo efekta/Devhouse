@@ -1,0 +1,17 @@
+.dropdown {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.down {
+  border-style: solid;
+  border-color: var(--black);
+  border-width: 0 2px 2px 0;
+  height: 8px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  width: 8px;
+}

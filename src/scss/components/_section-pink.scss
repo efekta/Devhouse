@@ -1,0 +1,27 @@
+.section-pink {
+  background: var(--light-pink);
+  padding: 47px 0;
+
+  @media(min-width: 1024px) {
+    padding: 87px 0;
+  }
+
+  &__title {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 41px;
+
+    @media(min-width: 768px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    @media(min-width: 1024px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+}

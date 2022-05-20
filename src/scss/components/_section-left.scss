@@ -1,0 +1,38 @@
+.section-left {
+  &__title {
+    color: var(--dark);
+    font-family: "Recoleta";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 25px;
+    text-align: left;
+
+    @media(min-width: 1024px) {
+      font-size: 45px;
+      line-height: 61px;
+    }
+  }
+
+  &__centered {
+    margin: 45px 0;
+    @media(min-width: 1024px) {
+      margin: 87px auto;
+      width: 1024px;
+    }
+  }
+
+  &__picture {
+    text-align: left;
+  }
+
+  &__caption {
+    color: #6D7278;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 0;
+    text-align: center;
+  }
+}
